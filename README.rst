@@ -55,5 +55,6 @@ TempMailz
     from TempMailz import TempMailz as tmz
 
     tm = tmz.TempMailz()
+    
     for msg in tm.listen(): print(msg)
     
