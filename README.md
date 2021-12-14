@@ -1,2 +1,3 @@
-# TempMailz
-The module allows you to interact with temporary mail
+<h1>Модуль для работы с временной почтой!</h1>
+<h2>Настройка и установка<h2>
+
