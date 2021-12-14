@@ -1,0 +1,9 @@
+setup.cfg
+setup.py
+TempMailz/TempMailz.py
+TempMailz/_init_.py
+TempMailz.egg-info/PKG-INFO
+TempMailz.egg-info/SOURCES.txt
+TempMailz.egg-info/dependency_links.txt
+TempMailz.egg-info/not-zip-safe
+TempMailz.egg-info/top_level.txt
