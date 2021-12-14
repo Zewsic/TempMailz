@@ -20,18 +20,41 @@ TempMailz
 
 Получить список доступных доменов::
 
-    from TempMailz import TempMailz
+    from TempMailz import TempMailz as tmz
     
-    TempMailz.getDomainList()
+    tmz.TempMailz.getDomainList()
 
 Создание нового ящика со случайным адресом::
 
-    from TempMailz import TempMailz
+    from TempMailz import TempMailz as tmz
 
-    tm = TempMailz()
+    tm = tmz.TempMailz()
 
 Создание нового ящика с настраeваемым адресом::
 
-    from TempMailz import TempMailz
+    from TempMailz import TempMailz as tmz
 
-    tm = TempMailz(login="cotulars", domain="1secmail.com")
+    tm = tmz.TempMailz(login="cotulars", domain="1secmail.com")
+
+Получить список сообщений с почтового ящика::
+
+    from TempMailz import TempMailz as tmz
+
+    tm = tmz.TempMailz()
+    inbox = tm.get_inbox()
+
+Получить информацию о сообщении с почтового ящика::
+
+    from TempMailz import TempMailz as tmz
+
+    tm = tmz.TempMailz()
+    msg = tm.get_msg(347165998)
+    
+Получать информацию о сообщениях при их поступлении:
+
+    from TempMailz import TempMailz as tmz
+
+    tm = tmz.TempMailz()
+    for msg in tm.listen():
+        print(msg)
+    
