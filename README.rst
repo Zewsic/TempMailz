@@ -1,36 +1,37 @@
 TempMailz
 =========
 
-Python API Wrapper for `temp-mail.org <https://temp-mail.org/>`_ service. Temp-mail is a service which lets you use anonymous emails for free. You can view full API specification in `api2.temp-mail.org <http://api2.temp-mail.org/>`_.
+Модуль для Python для работы с временной почтой.
 
-Requirements
+Требования
 ------------
 
-`requests <https://crate.io/packages/requests/>`_ - required.
+`requests <https://crate.io/packages/requests/>`_ - обязателен.
 
-`simplejson <https://crate.io/packages/simplejson/>`_ - optional, for a serious speed boost in JSON decode.
-
-Installation
+Установка
 ------------
 
-Installing with pip::
+Установка через PIP::
 
-    $ pip install temp-mail
+    $ pip install TempMailz
 
-Usage
+Использование
 -----
 
-Get all emails from given email login and domain::
+Получить список доступных доменов::
 
-    from tempmail import TempMail
+    from TempMailz import TempMailz
+    
+    TempMailz.getDomainList()
 
-    tm = TempMail(login='denis', domain='@gnail.pw')
-    print tm.get_mailbox()  # list of emails in denis@gnail.pw
+Создание нового ящика со случайным адресом::
 
-Generate email address and get emails from it::
+    from TempMailz import TempMailz
 
-    from tempmail import TempMail
+    tm = TempMailz()
 
-    tm = TempMail()
-    email = tm.get_email_address()  # v5gwnrnk7f@gnail.pw
-    print tm.get_mailbox(email)  # list of emails
+Создание нового ящика с настраeваемым адресом::
+
+    from TempMailz import TempMailz
+
+    tm = TempMailz(login="cotulars", domain="1secmail.com")
