@@ -56,5 +56,6 @@ TempMailz
 
     tm = tmz.TempMailz()
     
-    for msg in tm.listen(): print(msg)
+    for msg in tm.listen(): 
+        print(msg)
     
