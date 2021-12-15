@@ -50,7 +50,7 @@ TempMailz
     tm = tmz.TempMailz()
     msg = tm.get_msg(347165998)
     
-Получать информацию о сообщениях при их поступлении:
+Получать информацию о сообщениях при их поступлении::
 
     from TempMailz import TempMailz as tmz
 
